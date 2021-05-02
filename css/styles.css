@@ -19,14 +19,8 @@ a {
     text-decoration: none;
 }
 
-h1{
-    font-weight: 700;
-    font-size: 3.6rem;
-    color: white;
-}
-
 /* ---------------------------------------------
-   Encabezado
+Encabezado
 --------------------------------------------- */
 
 header {
@@ -35,6 +29,12 @@ header {
     align-items: center;
     height: 13vh;
     background: #2f1793;
+}
+
+header h1 a{
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: white;
 }
 
 header nav ul {
@@ -51,6 +51,7 @@ header div button {
     font-size: 1.8rem;
     border-radius: 3rem;
     padding: 1rem 2.5rem;
+    transition: all 0.4s ease-in-out;
 }
 
 header div button a{
@@ -69,6 +70,15 @@ header div button:nth-child(2){
     background:#23DCC2;
     border: none;
 }
+
+/* hoover! */
+
+header div button:hover{
+    background: #178b93;
+    border: solid 3px white;
+    transform: scale(1.05);
+}
+
 
 /* ---------------------------------------------
 Parte principal
@@ -102,7 +112,7 @@ main section article p:nth-of-type(2){
 
 main section article p:last-of-type{
     font-size: 1.3rem;
-    font-weight: 700;  
+    font-weight: 700;
     position: absolute;
     bottom: 1rem;
 }
@@ -137,6 +147,12 @@ main section article.ig i{
 /* ---------------------------------------------
    Pie de página
 --------------------------------------------- */
+
+footer h1 a{
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: white;
+}
 
 footer section:nth-child(1){
     background: #16284C;
@@ -208,8 +224,12 @@ footer section article.redes ul li {
     html{
         font-size: 9px;
     }
-    main section article {
-        width: 55%;
+
+    main section {
+        flex-direction: column;
+    }
+     main section article {
+        width: 50%;
     }
 
     header nav ul {
